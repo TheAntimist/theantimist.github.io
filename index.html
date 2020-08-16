@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Ankush Mishra's website" />
+        <meta name="author" content="Ankush Mishra" />
+        <meta
+            name="keywords"
+            content="ankush mishra,ankumish,ankusham,adobe,google summer of code"
+        />
+        <title>Ankush Mishra</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700"
+        />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175459055-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175459055-1');
+        </script>
+
+
+        <style>
+            body {
+                display: grid;
+                grid-gap: 2em;
+                align-content: space-evenly;
+                line-height: 1.4em;
+                background-color: #ffffff;
+                border-top: 0.3em solid #3498db;
+                grid-template-areas:
+                    'header'
+                    'content'
+                    'sidebar';
+                margin: 0 auto;
+                padding: 0;
+                max-width: 95%;
+                font-family: 'Rubik', 'Segoe UI', Helvetica, sans-serif;
+            }
+            .main-head {
+                grid-area: header;
+            }
+            .content {
+                grid-area: content;
+                font-size: 1.4em;
+            }
+            .content > h1 {
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+
+            .content a {
+                color: #000000;
+            }
+            .side {
+                grid-area: sidebar;
+                border-right: 0.15em solid #3c3c3c;
+                font-size: 1.2em;
+            }
+            .side > h1 {
+                font-size: 1.4em;
+                margin: 0;
+                font-weight: 500;
+                text-align: center;
+            }
+            .side > h2 {
+                font-size: 1em;
+                font-weight: normal;
+                margin: 0;
+                text-align: center;
+            }
+            .ad {
+                grid-area: ad;
+            }
+
+            @media (min-width: 500px) {
+                body {
+                    grid-template-columns: 1fr 3fr;
+                    grid-template-areas:
+                        'header   header'
+                        'sidebar content';
+                }
+            }
+            .image {
+                width: 90%;
+                outline: 0.1em solid #5c5c5c;
+                padding: 2px;
+                margin: auto auto 1em auto;
+            }
+            .link-wrap {
+                line-height: 1.4em;
+                display: flex;
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5em;
+            }
+            .link-wrap > a > div {
+                display: flex;
+            }
+
+            .link-wrap > a {
+                color: #3c3c3c;
+                font-size: 0.8em;
+            }
+            a {
+                opacity: 0.8;
+            }
+            a:hover {
+                opacity: 1;
+            }
+            .gutter-icon {
+                width: 2em;
+                padding-right: 0.5em;
+            }
+
+            .content > p {
+                font-size: 1em;
+                text-align: justify;
+            }
+
+            .timeline {
+                padding: 0;
+                position: relative;
+            }
+            .timeline::before {
+                content: '';
+                background-color: black;
+                width: 5px;
+                position: absolute;
+                left: 2.5em;
+                height: calc(100% - 0.5em);
+                top: 2em;
+            }
+            .timeline .year {
+                background-color: #000000;
+                color: #fcfcfc;
+                padding: 0.5em;
+                width: min-content;
+            }
+
+            .timeline ul {
+                list-style: none;
+                max-width: 70%;
+                margin: 0;
+            }
+            .timeline li {
+                font-size: 0.8em;
+                position: relative;
+                max-width: 60%;
+                padding: 0.5em;
+                text-align: center;
+                background-color: #000000;
+                color: #fcfcfc;
+                margin: 1em 0 0 1.5em;
+            }
+            .timeline li::before {
+                content: '';
+                background-color: black;
+                width: 1em;
+                position: absolute;
+                left: -0.6em;
+                height: 5px;
+                top: 50%;
+            }
+            .timeline ul > li:first-child {
+                margin: 1.5em 0 0 1.5em;
+            }
+            .timeline a {
+                color: #fcfcfc;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="main-head"></header>
+        <aside class="side">
+            <img
+                class="image"
+                src="./images/ankush.jpg"
+                alt="Ankush's Profile Photo"
+            />
+            <!-- <h1>Ankush Mishra</h1>
+            <h2>Member of Technical Staff 2</h2>
+            <h2>Adobe</h2>
+            <h2>New Delhi, India</h2> -->
+            <div class="link-wrap">
+                <a href="https://www.dropbox.com/s/fi7fvn4x2pzcff0/CV.pdf?dl=0">
+                    <div>
+                        [resume]
+                    </div>
+                </a>
+                <a href="https://github.com/theantimist">
+                    <div>
+                        [github/theantimist]
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/ankush-a-mishra">
+                    <div>
+                        [linkedin/ankush-a-mishra]
+                    </div>
+                </a>
+                <a href="mailto:ankushmishra9@gmail.com">
+                    <div>
+                        [email/ankushmishra9[at]gmail.com]
+                    </div>
+                </a>
+            </div>
+        </aside>
+        <article class="content">
+            <!--  <p>
+                A person of who carries varied interests on travelling, reading,
+                and exploring new things in this world. I am always open to
+                discussions on various topics, feel free to explore contact me
+                on any interesting thoughts.
+            </p> -->
+            <h1>Ankush Mishra</h1>
+            <p>
+                I am currently a software developer working for Adobe, where I
+                am leading various initiatives to drive automation and increased
+                velocity. I worked on developing a web based telephone client
+                with relevant integrations, currently being used across various
+                teams.
+            </p>
+            <p>
+                Prior to Adobe, I have been involved in Google Summer of Code
+                2016 during my undergrad where I worked on Apache Openmeetings
+                to integrate external calendar sync based on CalDAV and Google
+                Calendar.
+            </p>
+            <p>
+                I graduated from PESIT, Bangalore India with a Bachelor's of
+                Technology in Information Science.
+            </p>
+            <h1>Timeline</h1>
+
+            <!-- 2020 -->
+            <div class="timeline">
+                <h2 class="year">2020</h2>
+                <ul>
+                    <li>
+                        <h3>Member of Technical Staff 2<br />Adobe</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <h2 class="year">2019</h2>
+                <ul>
+                    <li>
+                        <h3>Identity and Innovators Award at Adobe</h3>
+                        <p>
+                            Won the Identity and Innovator Awards, 2019. Highest
+                            vertical award presented by CIO, no other employee
+                            with only 1 year experience has received this in 5+
+                            years.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Published Study on Amoebiasis dynamics</h3>
+                        <p>
+                            Developed an epidemiological model CISER, to
+                            represent amoebiasis disease spread. We then
+                            implemented the disease spread dynamics as a
+                            reactive routing protocol and comparisons to SIR and
+                            SEIR were made to show lesser overhead, while
+                            achieving comparable results for others.
+                        </p>
+                        <p>
+                            <a href="https://doi.org/10.1002/dac.4186"
+                                >[DOI:10.1002/dac.4186]</a
+                            ><a href="https://github.com/TheAntimist/ciser"
+                                >[Github]</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <h2 class="year">2018</h2>
+                <ul>
+                    <li>
+                        <h3>Joined Adobe as a Member of Technical Staff</h3>
+                    </li>
+                    <li>
+                        <h3>
+                            Graduated
+                        </h3>
+                        <p>
+                            Bachelor's of Technology at PESIT, Bangalore, India
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            Published Research on Environment Descriptor for the
+                            Blind
+                        </h3>
+                        <p>
+                            Implemented a deep learning module to produce a
+                            natural language descriptions from a real-time video
+                            input. Used an architecture based on VGGNet,
+                            consisting of CNN and RNN to produce a multimodal
+                            mapping from images to natural language text.
+                        </p>
+                        <p>
+                            <a
+                                href="https://doi.org/10.1109/ICACCI.2018.8554737"
+                                >[DOI:10.1109/ICACCI.2018.8554737]</a
+                            ><a href="https://github.com/TheAntimist/env_desc"
+                                >[Github]</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            Published Research on Detection of fighting styles
+                        </h3>
+                        <p>
+                            Created a dataset based on the various fighting
+                            styles, and representing the videos as a bag of
+                            localized spatio-temporal interest points. Utilized
+                            this dataset for classification of videos.
+                        </p>
+                        <p>
+                            <a href="https://doi.org/10.1109/ICISC.2018.8399036"
+                                >[DOI:10.1109/ICISC.2018.8399036]</a
+                            ><a
+                                href="https://github.com/theantimist/martial-arts"
+                                >[Github]</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <h2 class="year">2016</h2>
+                <ul>
+                    <li>
+                        <h3>
+                            Developer at Google Summer of Code<br />Apache
+                            Openmeetings
+                        </h3>
+
+                        <p>
+                            Implemented calendar sync based on CalDAV and Google
+                            Calendar to the Apache OpenMeetings Calendar.
+                        </p>
+                        <p>
+                            <a
+                                href="https://summerofcode.withgoogle.com/archive/2016/projects/5864271036547072/"
+                                >[GSoC:2016]</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </body>
+</html>
