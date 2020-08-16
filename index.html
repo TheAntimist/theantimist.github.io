@@ -15,15 +15,19 @@
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700"
         />
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175459055-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-175459055-1"
+        ></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
 
-        gtag('config', 'UA-175459055-1');
+            gtag('config', 'UA-175459055-1')
         </script>
-
 
         <style>
             body {
@@ -35,8 +39,9 @@
                 border-top: 0.3em solid #3498db;
                 grid-template-areas:
                     'header'
+                    'sidebar'
                     'content'
-                    'sidebar';
+                    'footer';
                 margin: 0 auto;
                 padding: 0;
                 max-width: 95%;
@@ -59,7 +64,7 @@
             }
             .side {
                 grid-area: sidebar;
-                border-right: 0.15em solid #3c3c3c;
+
                 font-size: 1.2em;
             }
             .side > h1 {
@@ -83,7 +88,19 @@
                     grid-template-columns: 1fr 3fr;
                     grid-template-areas:
                         'header   header'
-                        'sidebar content';
+                        'sidebar content'
+                        'footer footer';
+                }
+                .side {
+                    border-right: 0.15em solid #3c3c3c;
+                }
+                .timeline li {
+                    max-width: 60%;
+                }
+            }
+            @media (max-width: 499px) {
+                .timeline li {
+                    max-width: 90%;
                 }
             }
             .image {
@@ -153,7 +170,7 @@
             .timeline li {
                 font-size: 0.8em;
                 position: relative;
-                max-width: 60%;
+
                 padding: 0.5em;
                 text-align: center;
                 background-color: #000000;
@@ -178,6 +195,14 @@
             h3 {
                 font-weight: bold;
                 font-size: 1.2em;
+            }
+            footer {
+                grid-area: footer;
+                text-align: center;
+                border-top: 1px solid #6e6e6e;
+                margin-top: 0.5em;
+                color: #6e6e6e;
+                padding-top: 0.5em;
             }
         </style>
     </head>
@@ -228,9 +253,8 @@
             <p>
                 I am currently a software developer working for Adobe, where I
                 am leading various initiatives to drive automation and increased
-                velocity. I worked on developing a web based telephone client
-                with relevant integrations, currently being used across various
-                teams.
+                velocity. I have been involved in the development of various
+                backend API's which are consumed by other internal services.
             </p>
             <p>
                 Prior to Adobe, I have been involved in Google Summer of Code
@@ -364,5 +388,9 @@
                 </ul>
             </div>
         </article>
+        <footer>
+            The postings on this site are my own and don't necessarily represent
+            my employer’s positions, strategies or opinions.
+        </footer>
     </body>
 </html>
